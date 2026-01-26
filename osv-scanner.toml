@@ -1,0 +1,4 @@
+
+[[IgnoredVulns]]
+id = "GHSA-g9mf-h72j-4rw9"
+reason = "undici v5.29.0 - No patch available for 5.x.x (requires upgrade to 6.23.0+). Low severity (CVSS 3.7). Difficult to exploit: requires compromising ACTIONS_CACHE_URL or GITHUB_SERVER_URL environment variables, which are controlled by GitHub Actions runtime. Impact limited to DoS of individual workflow runs."
