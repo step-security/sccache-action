@@ -1,4 +1,19 @@
-
 [[IgnoredVulns]]
 id = "GHSA-g9mf-h72j-4rw9"
-reason = "undici v5.29.0 - No patch available for 5.x.x (requires upgrade to 6.23.0+). Low severity (CVSS 3.7). Difficult to exploit: requires compromising ACTIONS_CACHE_URL or GITHUB_SERVER_URL environment variables, which are controlled by GitHub Actions runtime. Impact limited to DoS of individual workflow runs."
+reason = "undici: Fetch API decompression issue; action uses Octokit REST client not fetch()"
+
+[[IgnoredVulns]]
+id = "GHSA-2mjp-6q6p-2qxm"
+reason = "undici: HTTP smuggling requires untrusted intermediary; action only talks to GitHub API"
+
+[[IgnoredVulns]]
+id = "GHSA-vrm6-8vpv-qv8q"
+reason = "undici: WebSocket memory issue; action does not use WebSockets"
+
+[[IgnoredVulns]]
+id = "GHSA-v9p9-hfj2-hcw8"
+reason = "undici: WebSocket client exception; action does not use WebSockets"
+
+[[IgnoredVulns]]
+id = "GHSA-4992-7rv2-5pvq"
+reason = "undici: CRLF injection via upgrade option; not used by @actions/github or @actions/http-client"
